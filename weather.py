@@ -23,7 +23,7 @@ def get_lat_lon(city_name,country_code,API_key):
     lat,lon=data.get('lat'),data.get('lon')
     return lat,lon
 
-
+# add another route here
 
 def get_current_weather(lat,lon,API_key):
     response=requests.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_key}&units=metric").json()
